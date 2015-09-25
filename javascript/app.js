@@ -16,8 +16,8 @@ var objOffset = {
 	sliceWidth = 27, // 偏移量 一般没有单位 或者使用百分比
 	fill = false,
 	borderWidth = "27px", // 边框图片宽度 需要单位
-	verRepeat = "Stretch",
-	horRepeat = "Stretch";
+	verRepeat = "stretch",
+	horRepeat = "stretch";
 
 // 前缀补充
 var arrBeforeTag = ["-moz-", "-webkit-", "-o-"];
@@ -44,7 +44,7 @@ window.onload = function(){
 
 // 画面重绘函数
 function reDraw(){
-	setCss = "width: 100px; height: 100px; border: 2px dashed black;";
+	setCss = "width: 100px; height: 100px; border: 2px solid black; box-sizing: content-box;";
 	for(var i = 0, length = arrBeforeTag.length; i < length; i++){
 		setCss += arrBeforeTag[i] + "border-image: url(border.png) " + sliceWidth + (fill == true ? " fill" : "") + "/ " + borderWidth + "/ ";
 		for(var j in objOffset){
