@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Design your border-image</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<header><h1>border-image-generator</h1></header>
+	<section id="main-area" data-name="main-area">
+		<section id="edit-area" date-name="user-info">
+			<h2>Editor</h2>
+			<section><label>Image:</label>单机版使用官方示例图片</section>
+			<section><label>Top Offset:</label><input id="topOffset" type="range" value="0" min="0" max="200" /></section>
+			<section><label>Right Offset:</label><input id="rightOffset" type="range" value="0" min="0" max="200" /></section>
+			<section><label>Bottom Offset:</label><input id="bottomOffset" type="range" value="0" min="0" max="200" /></section>
+			<section><label>Left Offset:</label><input id="leftOffset" type="range" value="0" min="0" max="200" /></section>
+			<section><label>Fill Center:</label><input type="checkbox" /></section>
+			<section><label>Slice Width:</label><input id="sliceWidth" type="text" value="27" /></section>
+			<h2>Border Size</h2>
+			<section><label>width:</label><input id="borderWidth" type="text" value="27px" /></section>
+			<h2>Border Repeat</h2>
+			<section>
+				<label>Vertical Repeat:</label><select id="ver-rep">
+					<option value="Repeat">Repeat</option>
+					<option value="Round">Round</option>
+					<option value="Stretch" selected="selected">Stretch</option>
+				</select>
+			</section>
+			<section>
+				<label>Horizontal Repeat:</label><select id="hor-rep">
+					<option value="Repeat">Repeat</option>
+					<option value="Round">Round</option>
+					<option value="Stretch" selected="selected" >Stretch</option>
+				</select>
+			</section>
+		</section>
+		<section id="view-area" data-name="view-area">
+		</section>
+		<section class="clearfix"></section>
+		<section data-name="preview-area">
+			<h2>Preview</h2>
+			<section id="code-area">
+				
+			</section>
+		</section>
+	</section>
+	<footer>
+		coding by WitNesS23
+	</footer>
+	<script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
